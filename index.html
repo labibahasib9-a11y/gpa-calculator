@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>GPA Calculator</h1>
+
+    <table id="gpaTable">
+        <tr>
+            <th>Subject</th>
+            <th>Credit</th>
+            <th>Marks</th>
+            <th>Grade</th>
+            <th>Grade Point</th>
+            <th>Action</th>
+        </tr>
+
+        <!-- Initial row -->
+        <tr>
+            <td><input type="text" class="subject" placeholder="Subject Name"></td>
+            <td><input type="number" class="credit" placeholder="Credit"></td>
+            <td><input type="number" class="marks" placeholder="Marks"></td>
+            <td class="grade"></td>
+            <td class="point"></td>
+            <td><button class="deleteBtn" onclick="deleteRow(this)">❌</button></td>
+        </tr>
+
+    </table>
+
+    <div class="buttons">
+        <button onclick="addRow()">➕ Add Subject</button>
+        <button onclick="calculateGPA()">🧮 Calculate GPA</button>
+        <button onclick="resetAll()">🔄 Reset All</button>
+    </div>
+
+    <h2 id="result"></h2>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

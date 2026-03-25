@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 30px;
+    color: #2c3e50;
+}
+
+/* Table Design */
+table {
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 85%;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+th {
+    background: #2c3e50;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Input Box */
+input {
+    width: 100px;
+    padding: 6px;
+    text-align: center;
+}
+
+/* Buttons */
+button {
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Add / Calculate / Reset Buttons */
+.buttons button:nth-child(1) { background: #27ae60; }
+.buttons button:nth-child(2) { background: #2980b9; }
+.buttons button:nth-child(3) { background: #c0392b; }
+
+/* Delete Row Button */
+.deleteBtn {
+    background: #e74c3c;
+    padding: 5px 10px;
+}
+
+/* Hover Effect */
+button:hover {
+    opacity: 0.85;
+}
+
+/* GPA Result */
+#result {
+    margin-top: 25px;
+    font-size: 22px;
+    color: #34495e;
+    font-weight: bold;
+}
